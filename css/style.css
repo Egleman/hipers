@@ -26,7 +26,9 @@
     padding: 0 10px;
   }
 }
-.h1, h1 {
+h1, .h1 {
+  line-height: 110%;
+  font-weight: 500;
   font-size: clamp(32px, 32px + (100vw - 606px) * 0.0504807692, 53px);
 }
 
@@ -43,6 +45,8 @@
 }
 .text_dop {
   font-size: 20px;
+  line-height: 130%;
+  font-weight: 400;
 }
 
 .subtitle {
@@ -272,6 +276,44 @@
 @media (max-width: 606px) {
   .header {
     padding: 10px 0;
+  }
+}
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 30px;
+  padding: 20px;
+  background: var(--white);
+}
+.hero__banner {
+  background: url(/images/hero-section/1.jpg) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 36px 20px;
+}
+.hero__banner h1 {
+  margin-bottom: 15px;
+}
+.hero__banner .text_dop {
+  color: var(--grey);
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+.hero__subtitle {
+  max-width: 650px;
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .hero__subtitle {
+    max-width: 450px;
+  }
+}
+@media (max-width: 606px) {
+  .hero__banner {
+    background: url(/images/hero-section/1-mobile.jpg) center/cover no-repeat;
   }
 }
 *:active, *:focus, *:focus-within, *:target, *:hover, *:visited, *:focus-visible {

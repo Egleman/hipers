@@ -1,4 +1,6 @@
-.h1, h1 {
+h1, .h1 {
+    line-height: 110%;
+    font-weight: 500;
     font-size: clamp(
         32px,
         calc(32px + (100vw - 606px) * (21 / 416)),
@@ -22,6 +24,8 @@
     font-size: 16px;
     &_dop {
         font-size: 20px;
+        line-height: 130%;
+        font-weight: 400;
     }
 }
 
