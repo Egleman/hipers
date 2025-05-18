@@ -1,0 +1,30 @@
+.h1, h1 {
+    font-size: clamp(
+        32px,
+        calc(32px + (100vw - 606px) * (21 / 416)),
+        53px
+    );
+}
+
+.h2, h2 {
+    font-size: clamp(
+        27px,
+        calc(27px + (100vw - 606px) * (23 / 416)),
+        50px
+    );
+}
+
+.h3, h3 {
+    font-size: 18px;
+}
+
+.text {
+    font-size: 16px;
+    &_dop {
+        font-size: 20px;
+    }
+}
+
+.subtitle {
+    font-size: 14px;
+}

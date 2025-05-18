@@ -1,0 +1,44 @@
+@import './imports';
+
+*:active, *:focus, *:focus-within, *:target, *:hover, *:visited, *:focus-visible {
+    outline: none !important;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+}
+a { 
+    text-decoration: none;
+    color: #000;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+body {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    position: relative;
+    color: #000;
+    min-width: 303px;
+    scroll-behavior: smooth;
+    background: var(--light-background);
+}
+
+ol, ul { 
+    list-style: none; 
+}
+
+label, button {
+    cursor: pointer;
+}
+b {
+    font-weight: 700;
+}
+

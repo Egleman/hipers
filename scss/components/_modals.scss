@@ -1,0 +1,87 @@
+.menu-overlay {
+    position: fixed;
+    background: var(--purple-transparent);
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: none;
+    z-index: 10;
+    opacity: 0;
+    transition: .5s all;
+}
+
+.mobile-menu {
+    padding: 20px 15px 0 15px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        max-width: 400px;
+        width: 100%;
+        margin-left: auto;
+    }
+    &__close {
+        display: flex;
+        border-radius: 100%;
+        border: 1px solid var(--puprple);
+        width: 45px;
+        height: 45px;
+        background: var(--white);
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    &__body {
+        box-shadow: 0 5px 20px 0 var(--purple-transparent);
+        background: var(--white);
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 400px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 15px;
+        background: var(--light-blue);
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--black);
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1022px) {
+    .menu-overlay.active {
+        display: block;
+    }
+    .menu-overlay.visible {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 606px) {
+    .mobile-menu {
+        padding: 10px 10px 0 10px;
+    }
+}

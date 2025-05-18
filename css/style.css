@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+:root {
+  --font-family: "Geist", sans-serif;
+  --white: #fff;
+  --black: #000;
+  --puprple: #6877dd;
+  --dark-purple: #5a67bf;
+  --light-blue: #ecf1f9;
+  --grey: #677280;
+  --grey-2: #aaacaf;
+  --purple-transparent: rgba(104, 119, 221, 0.5);
+  --light-background: #f6f7f9;
+  --red: #db0000;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 606px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+.h1, h1 {
+  font-size: clamp(32px, 32px + (100vw - 606px) * 0.0504807692, 53px);
+}
+
+.h2, h2 {
+  font-size: clamp(27px, 27px + (100vw - 606px) * 0.0552884615, 50px);
+}
+
+.h3, h3 {
+  font-size: 18px;
+}
+
+.text {
+  font-size: 16px;
+}
+.text_dop {
+  font-size: 20px;
+}
+
+.subtitle {
+  font-size: 14px;
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+  display: none;
+}
+
+.btn {
+  border-radius: 40px;
+  padding: 0 25px;
+  height: 47px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 100%;
+  color: var(--white);
+  transition: 0.3s all;
+  border: 1px solid transparent;
+  background: var(--puprple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: -moz-max-content;
+  width: max-content;
+  box-sizing: border-box;
+}
+.btn_white {
+  color: var(--puprple);
+  border: 1px solid var(--puprple);
+  background: transparent;
+}
+
+.hover-link {
+  color: var(--black);
+  transition: 0.3s all;
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    background: var(--dark-purple);
+  }
+  .btn_white:hover {
+    background: var(--puprple);
+    color: var(--white);
+  }
+  .hover-link:hover {
+    color: var(--puprple);
+  }
+}
+@media (hover: none) {
+  .btn:active {
+    background: var(--dark-purple);
+  }
+  .btn_white:active {
+    background: var(--puprple);
+    color: var(--white);
+  }
+  .hover-link:active {
+    color: var(--puprple);
+  }
+}
+.menu-overlay {
+  position: fixed;
+  background: var(--purple-transparent);
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: none;
+  z-index: 10;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.mobile-menu {
+  padding: 20px 15px 0 15px;
+}
+.mobile-menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+}
+.mobile-menu__close {
+  display: flex;
+  border-radius: 100%;
+  border: 1px solid var(--puprple);
+  width: 45px;
+  height: 45px;
+  background: var(--white);
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-menu__body {
+  box-shadow: 0 5px 20px 0 var(--purple-transparent);
+  background: var(--white);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.mobile-menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px;
+  background: var(--light-blue);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--black);
+}
+.mobile-menu__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mobile-menu__button {
+  width: 100%;
+}
+
+@media (max-width: 1022px) {
+  .menu-overlay.active {
+    display: block;
+  }
+  .menu-overlay.visible {
+    opacity: 1;
+  }
+}
+@media (max-width: 606px) {
+  .mobile-menu {
+    padding: 10px 10px 0 10px;
+  }
+}
+.header {
+  padding: 20px 0;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header__logo {
+  display: flex;
+  max-width: 120px;
+  width: 100%;
+}
+.header__logo img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header__list-link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--black);
+  white-space: nowrap;
+}
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__button {
+  padding: 0 20px;
+}
+.header__burger {
+  display: none;
+  border-radius: 100%;
+  border: 1px solid var(--puprple);
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .header__left {
+    gap: 25px;
+  }
+  .header__list {
+    gap: 15px;
+  }
+}
+@media (max-width: 1022px) {
+  .header__nav {
+    display: none;
+  }
+  .header__buttons {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+  }
+}
+@media (max-width: 606px) {
+  .header {
+    padding: 10px 0;
+  }
+}
+*:active, *:focus, *:focus-within, *:target, *:hover, *:visited, *:focus-visible {
+  outline: none !important;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  position: relative;
+  color: #000;
+  min-width: 303px;
+  scroll-behavior: smooth;
+  background: var(--light-background);
+}
+
+ol, ul {
+  list-style: none;
+}
+
+label, button {
+  cursor: pointer;
+}
+
+b {
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */
