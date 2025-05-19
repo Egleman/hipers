@@ -864,6 +864,9 @@ h2, .h2 {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
+.hero__grid_sites {
+  grid-template-columns: repeat(3, 1fr);
+}
 .hero__card {
   position: relative;
   background: var(--light-blue);
@@ -891,16 +894,53 @@ h2, .h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.hero_sites .hero__banner {
+  min-height: 400px;
+  background: url(/images/hero-section/3.jpg) center/cover no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.hero_design .hero__banner {
+  min-height: 400px;
+  background: url(/images/hero-section/4.jpg) center/cover no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.hero_systems .hero__banner {
+  min-height: 400px;
+  background: url(/images/hero-section/5.jpg) center/cover no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (max-width: 1022px) {
   .hero__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .hero__grid_sites {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 960px) {
   .hero__subtitle {
     max-width: 450px;
+  }
+}
+@media (max-width: 798px) {
+  .hero__grid_sites {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 606px) {
@@ -928,6 +968,24 @@ h2, .h2 {
   }
   .hero_reclame .hero__banner {
     background: url(/images/hero-section/2-mobile.jpg) center/cover no-repeat;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .hero_sites .hero__banner {
+    background: url(/images/hero-section/3-mobile.jpg) center/cover no-repeat;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .hero_design .hero__banner {
+    background: url(/images/hero-section/4-mobile.jpg) center/cover no-repeat;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .hero_systems .hero__banner {
+    background: url(/images/hero-section/5-mobile.jpg) center/cover no-repeat;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1539,6 +1597,9 @@ h2, .h2 {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+.desk__grid_systems {
+  grid-template-columns: repeat(2, 1fr);
+}
 .desk__card {
   border-radius: 20px;
   padding: 40px;
@@ -1647,6 +1708,15 @@ h2, .h2 {
   }
   .desk__slug {
     padding: 0 20px 20px 20px;
+  }
+}
+@media (max-width: 606px) {
+  .desk__banner {
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .desk__title_sites br {
+    display: none;
   }
 }
 *:active, *:focus, *:focus-within, *:target, *:hover, *:visited, *:focus-visible {

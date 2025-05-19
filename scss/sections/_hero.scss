@@ -37,6 +37,9 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
+        &_sites {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
     &__card {
         position: relative;
@@ -60,6 +63,31 @@
             min-height: 400px;
             background: url(/images/hero-section/2.jpg) center/cover no-repeat;
             justify-content: center;
+            box-sizing: border-box;
+        }
+    }
+    &_sites {
+        .hero__banner {
+            min-height: 400px;
+            background: url(/images/hero-section/3.jpg) center/cover no-repeat;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+    }
+    &_design {
+        .hero__banner {
+            min-height: 400px;
+            background: url(/images/hero-section/4.jpg) center/cover no-repeat;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+    }
+    &_systems {
+        .hero__banner {
+            min-height: 400px;
+            background: url(/images/hero-section/5.jpg) center/cover no-repeat;
+            justify-content: center;
+            box-sizing: border-box;
         }
     }
 }
@@ -68,6 +96,9 @@
     .hero {
         &__grid {
             grid-template-columns: repeat(2, 1fr);
+            &_sites {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
     }
 }
@@ -76,6 +107,16 @@
     .hero {
         &__subtitle {
             max-width: 450px;
+        }
+    }
+}
+
+@media (max-width: 798px) {
+    .hero {
+        &__grid {
+            &_sites {
+                grid-template-columns: 1fr;
+            }
         }
     }
 }
@@ -110,6 +151,24 @@
         &_reclame {
             .hero__banner {
                 background: url(/images/hero-section/2-mobile.jpg) center/cover no-repeat;
+                justify-content: flex-start;
+            }
+        }
+        &_sites {
+            .hero__banner {
+                background: url(/images/hero-section/3-mobile.jpg) center/cover no-repeat;
+                justify-content: flex-start;
+            }
+        }
+        &_design {
+            .hero__banner {
+                background: url(/images/hero-section/4-mobile.jpg) center/cover no-repeat;
+                justify-content: flex-start;
+            }
+        }
+        &_systems {
+            .hero__banner {
+                background: url(/images/hero-section/5-mobile.jpg) center/cover no-repeat;
                 justify-content: flex-start;
             }
         }

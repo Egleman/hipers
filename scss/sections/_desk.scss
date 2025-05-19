@@ -18,6 +18,10 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+        &_systems {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
     }
     &__card {
         border-radius: 20px;
@@ -132,6 +136,21 @@
         }
         &__slug {
             padding: 0 20px 20px 20px;
+        }
+    }
+}
+@media (max-width: 606px) {
+    .desk {
+        &__banner {
+            border-radius: 20px;
+            padding: 20px;
+        }
+        &__title {
+            &_sites {
+                br {
+                    display: none;
+                }
+            }
         }
     }
 }
