@@ -1,0 +1,22 @@
+
+.section {
+    padding: 50px 0;
+    &:first-of-type {
+        padding-top: 0;
+    }
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 606px) {
+    .section {
+        padding: 25px 0;
+        &:first-of-type {
+            padding-top: 0;
+        }
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+    }
+}

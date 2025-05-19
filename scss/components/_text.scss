@@ -8,7 +8,9 @@ h1, .h1 {
     );
 }
 
-.h2, h2 {
+h2, .h2  {
+    font-weight: 500;
+    line-height: 110%;
     font-size: clamp(
         27px,
         calc(27px + (100vw - 606px) * (23 / 416)),
@@ -18,10 +20,13 @@ h1, .h1 {
 
 .h3, h3 {
     font-size: 18px;
+    line-height: 120%;
+    font-weight: 500;
 }
 
 .text {
     font-size: 16px;
+    line-height: 150%;
     &_dop {
         font-size: 20px;
         line-height: 130%;
@@ -29,6 +34,27 @@ h1, .h1 {
     }
 }
 
+.number {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+}
+
 .subtitle {
+    font-weight: 500;
     font-size: 14px;
+    line-height: 100%;
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    &::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: var(--puprple);
+    }
 }

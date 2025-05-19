@@ -1,0 +1,52 @@
+.corner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    &__wrapper {
+        position: relative;
+        .left {
+            display: flex;
+            flex-shrink: 0;
+            position: absolute;
+            right: 100%;
+            top: 0;
+        }
+        .body {
+            border-radius: 0 0 0 30px;
+            padding: 0px;
+            width: 60px;
+            height: 60px;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon {
+                width: 45px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                background: var(--puprple);
+            }
+        }
+        .bottom {
+            position: absolute;
+            display: flex;
+            flex-shrink: 0;
+            top: 100%;
+            right: 0;
+        }
+    }
+}
+
+.corner.gray {
+    .left, .bottom {
+        path {
+            fill: var(--light-background);
+        }
+    }
+    .body {
+        background: var(--light-background);
+    }
+}

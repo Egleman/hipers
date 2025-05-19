@@ -28,6 +28,48 @@
         max-width: 650px;
         width: 100%;
     }
+    .h1 {
+        .mobile {
+            display: none;
+        }
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    &__card {
+        position: relative;
+        background: var(--light-blue);
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &-number {
+            line-height: 110%;
+            color: var(--black);
+        }
+        &-text {
+            color: var(--grey);
+        }
+    }
+
+    &_reclame {
+        .hero__banner {
+            min-height: 400px;
+            background: url(/images/hero-section/2.jpg) center/cover no-repeat;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 1022px) {
+    .hero {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 }
 
 @media (max-width: 960px) {
@@ -40,8 +82,48 @@
 
 @media (max-width: 606px) {
     .hero {
+        .h1 {
+            .mobile {
+                display: block;
+            }
+            .pc {
+                display: none;
+            }
+        }
+        &__wrapper {
+            border-radius: 20px;
+        }
         &__banner {
             background: url(/images/hero-section/1-mobile.jpg) center/cover no-repeat;
+            padding: 15px 15px 278px 15px;
+            border-radius: 15px;
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+        &__card {
+            border-radius: 15px;
+            padding: 15px;
+            gap: 5px;
+        }
+
+        &_reclame {
+            .hero__banner {
+                background: url(/images/hero-section/2-mobile.jpg) center/cover no-repeat;
+                justify-content: flex-start;
+            }
+        }
+    }
+}
+
+@media (max-width: 365px) {
+    .hero {
+        &__card {
+            &-text {
+                .hidden-mobile {
+                    display: none;
+                }
+            }
         }
     }
 }

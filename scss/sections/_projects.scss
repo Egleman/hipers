@@ -1,0 +1,183 @@
+.projects {
+    &__title {
+        color: var(--black);
+        margin-bottom: 40px;
+    }
+    &__wrapper {
+        border-radius: 30px;
+        padding: 20px;
+        background: var(--white);
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // gap: 10px;
+        margin-bottom: 40px;
+    }
+    &__button {
+        margin: 0 auto;
+    }
+    &__button.mobile {
+        display: none;
+    }
+    &__card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        padding: 20px;
+        background: var(--light-blue);
+        display: block;
+        height: 312px;
+        box-sizing: border-box;
+        &-image {
+            transition: .5s all;
+            height: 212px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-body {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background: rgba(0, 0, 0, 0.6);
+            transition: .5s all;
+        }
+        &-text {
+            color: var(--white);
+            transition: .5s all;
+        }
+        &-text.hidden {
+            visibility: hidden;
+        }
+        &-button {
+            width: 100%;
+            margin-top: 15px;
+            opacity: 0;
+        }
+        &-button.hidden {
+            display: none;
+            opacity: 0;
+            height: 0px;
+            margin-top: 0;
+        }
+    }
+    .swiper-slide {
+        width: 396.66px !important;
+    }
+}
+
+@media (hover: hover) {
+    .projects {
+        &__card {
+            &:hover {
+                .projects__card-image {
+                    height: 150px;
+                }
+                .projects__card-body {
+                    background: rgba(0, 0, 0, 0);
+                }
+                .projects__card-button {
+                    opacity: 1;
+                }
+                .projects__card-text {
+                    color: var(--black);
+                }
+                .projects__card-button.hidden {
+                    opacity: 0;
+                    height: 47px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1022px) {
+    .projects {
+        &__card {
+            height: 277px;
+            border-radius: 20px;
+            padding: 20px;
+            .projects__card-image {
+                height: 178px;
+            }
+            .projects__card-body {
+                background: rgba(0, 0, 0, 0);
+            }
+            .projects__card-text {
+                color: var(--black);
+            }
+            .projects__card-button {
+                display: none;
+            }
+            &:hover {
+                .projects__card-image {
+                    height: 178px;
+                }
+                .projects__card-body {
+                    background: rgba(0, 0, 0, 0);
+                }
+                .projects__card-text {
+                    color: var(--black);
+                }
+                .projects__card-button {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 798px) {
+    .projects {
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 606px) {
+    .projects {
+        .subtitle {
+            padding-left: 20px;
+        }
+        &__title {
+            padding-left: 20px;
+        }
+        &__wrapper {
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 0;
+        }
+        .swiper-slide {
+            width: 100% !important;
+            height: max-content !important;
+        }
+        &__button.mobile {
+            display: flex;
+            margin-top: 10px;
+        }
+        &__button.pc {
+            display: none;
+        }
+        &__card {
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 465px) {
+    .projects {
+        &__button.mobile {
+            width: 100%;
+        }  
+    }
+}

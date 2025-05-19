@@ -1,0 +1,137 @@
+.desk {
+    &__banner {
+        border-radius: 30px;
+        padding: 40px;
+        background: url(/images/desk-section/1.jpg) center/cover no-repeat;
+        margin-bottom: 10px;
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__text {
+        margin-bottom: 30px;
+        color: var(--grey);
+        max-width: 750px;
+        width: 100%;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    &__card {
+        border-radius: 20px;
+        padding: 40px;
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        &-name {
+            color: var(--black);
+            margin-bottom: 10px;
+        }
+        &-text {
+            color: var(--grey);
+            margin-bottom: 40px;
+        }
+        &-button {
+            margin-top: auto;
+        }
+    }
+    &__accordion{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        &-item {
+            border-radius: 15px;
+            background: var(--white);
+        }
+        &-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            cursor: pointer;
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                transition: .5s all;
+                width: 35px;
+                height: 35px;
+                svg {
+                    width: 22px;
+                    height: 22px;
+                    path {
+                        transition: .5s all;
+                    }
+                }
+            }
+
+        }
+        &-item.accordion__item_show, &-item.accordion__item_slidedown {
+            .desk__accordion-header {
+                .icon {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+    }
+}
+
+@media (hover: hover) {
+    .desk {
+        &__accordion {
+            &-header {
+                &:hover {
+                    .icon {
+                        background: var(--puprple);
+                        svg {
+                            path {
+                                stroke: var(--white);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (hover: none) {
+    .desk {
+        &__accordion {
+            &-header {
+                &:active {
+                    .icon {
+                        background: var(--puprple);
+                        svg {
+                            path {
+                                stroke: var(--white);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1022px) {
+    .desk {
+        &__grid {
+            display: none;
+        }
+        &__accordion{
+            display: flex;
+        }
+        &__card {
+            &-text {
+                margin-bottom: 20px;
+            }
+        }
+        &__slug {
+            padding: 0 20px 20px 20px;
+        }
+    }
+}

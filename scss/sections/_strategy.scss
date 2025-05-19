@@ -1,0 +1,172 @@
+.strategy {
+    &__title {
+        color: var(--black);
+        margin-bottom: 40px;
+    }
+    &__wrapper {
+        border-radius: 30px;
+        padding: 20px;
+        background: var(--white);
+    }
+    &__top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        border-radius: 20px;
+        padding: 20px;
+        background: var(--light-blue);
+        margin-bottom: 10px;
+    }
+    &__text {
+        color: var(--grey);
+    }
+    &__quote {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .quote {
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            gap: 10px;
+            background: var(--white);
+
+            svg {
+                display: flex;
+                flex-shrink: 0;
+            }
+
+            &__text {
+                color: var(--black);
+            }
+        }
+        &-button {
+            width: 100%;
+        }
+    }
+    &__bottom {
+        border-radius: 20px;
+        padding: 20px;
+        background: var(--puprple);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 15px;
+        padding: 20px 40px 20px 20px;
+        background: var(--white);
+        cursor: pointer;
+        position: relative;
+        &-name {
+            color: var(--black);
+            transition: .3s all;
+        }
+        &-text {
+            color: var(--grey);
+        }
+        &-link {
+            position: absolute;
+            right: 7.5px;
+            bottom: 7.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            background: var(--dark-purple);
+            transition: .5s all;
+            opacity: 0;
+            transform: scale(0) rotate(45deg);
+        }
+    }
+}
+
+@media (hover: hover) {
+    .strategy {
+        &__card {
+            &:hover {
+                .strategy__card-name {
+                    color: var(--puprple);
+                }
+                .strategy__card-link {
+                    opacity: 1;
+                    transform: scale(1) rotate(0deg);
+                }
+            }
+        }
+    }
+}
+
+@media (hover: none) {
+    .strategy {
+        &__card {
+            &:active {
+                .strategy__card-name {
+                    color: var(--puprple);
+                }
+                .strategy__card-link {
+                    opacity: 1;
+                    transform: scale(1) rotate(0deg);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1022px) {
+    .strategy {
+        &__bottom {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 798px) {
+    .strategy {
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 606px) {
+    .strategy {
+        .subtitle {
+            padding-left: 20px;
+        }
+        &__title {
+            padding-left: 20px;
+        }
+        &__wrapper {
+            border-radius: 20px;
+        }
+        &__top {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        &__bottom {
+            border-radius: 15px;
+            padding: 15px;
+            grid-template-columns: 1fr;
+        }
+        &__card {
+            border-radius: 10px;
+            padding: 15px;
+            &-link {
+                display: none;
+            }
+        }
+        &__quote {
+            .quote {
+                flex-direction: column;
+            }
+        }
+    }
+}

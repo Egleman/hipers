@@ -11,6 +11,32 @@
     transition: .5s all;
 }
 
+.overlay {
+    position: fixed;
+    z-index: 3;
+    background: var(--purple-transparent);
+    display: none;
+    grid-template-columns: 10px 1fr 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+    inset: 0;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    transition: .5s all;
+    opacity: 0;
+    overflow-y: auto;
+}
+
+.overlay.active {
+    display: grid;
+}
+
+.overlay.visible {
+    opacity: 1;
+}
+
 .mobile-menu {
     padding: 20px 15px 0 15px;
     &__wrapper {
@@ -71,6 +97,66 @@
     }
 }
 
+.modal-callback {
+    border-radius: 30px;
+    padding: 40px;
+    background: var(--light-blue);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    grid-column: 2 / span 1;
+    margin: 0 auto;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    &__close {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background: var(--puprple);
+        border-radius: 100%;
+        flex-shrink: 0;
+        border: none;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__form.hidden {
+        display: none;
+    }
+}
+
+.modal-policy {
+    border-radius: 30px;
+    padding: 40px;
+    background: var(--light-blue);
+    max-width: 1250px;
+    width: 100%;
+    box-sizing: border-box;
+    grid-column: 2 / span 1;
+    margin: 0 auto;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .text {
+            color: var(--grey);
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
 @media (max-width: 1022px) {
     .menu-overlay.active {
         display: block;
@@ -83,5 +169,21 @@
 @media (max-width: 606px) {
     .mobile-menu {
         padding: 10px 10px 0 10px;
+    }
+    .modal-callback {
+        border-radius: 20px;
+        padding: 15px;
+    }
+    .modal-policy {
+        border-radius: 20px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .modal-policy {
+        &__title {
+            font-size: 24px;
+        }
     }
 }

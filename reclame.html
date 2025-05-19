@@ -49,15 +49,25 @@
         </div>
     </header>
     <main>
-        <section class="section hero">
+        <section class="section hero hero_reclame">
             <div class="container">
                 <div class="hero__wrapper">
                     <div class="hero__banner">
+                        <nav class="breadcrumb" aria-label="Breadcrumb">
+                            <ol class="breadcrumbs__list">
+                                <li>
+                                    <a href="/" class="breadcrumbs__link">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="/" class="breadcrumbs__link active" aria-current="page">Реклама</a>
+                                </li>
+                            </ol>
+                        </nav>
                         <h1 class="h1">
-                            Раскройте<br class="mobile"> цифровой<br> потенциал<br> вашего<br class="pc"> бизнеса
+                            Digital-маркетинг
                         </h1>
                         <p class="text text_dop hero__subtitle">
-                            Комплексные решения для развития в интернете – от создания сайтов и технической поддержки до мощного продвижения!
+                            Экономически эффективная реклама, прозрачность<br> в работе и измеряемые результаты!
                         </p>
                         <button class="hero__button btn" toggle="#callback">Оставить заявку</button>
                     </div>
@@ -168,72 +178,187 @@
                 </div>
             </div>
         </section>
-        <section class="section strategy">
+
+        <section class="section desk">
             <div class="container">
-                <p class="subtitle">О нас</p>
-                <h2 class="h2 strategy__title">Только лучшие Digital-стратегии</h2>
-                <div class="strategy__wrapper">
-                    <div class="strategy__top">
-                        <p class="strategy__text text">
-                            Мы знаем, как привлечь и удержать клиентов, улучшить репутацию бренда, 
-                            увеличить долю рынка и обеспечить рост компании в целом. Учитывая 
-                            особенности Вашего бизнеса и конкурентную среду, разработаем 
-                            маркетинговую стратегию, создадим сайт и подберём оптимальные 
-                            инструменты продвижения.
+                <div class="desk__banner">
+                    <p class="desk__title h2">
+                        Понимаем уникальность<br> каждого бизнеса
+                    </p>
+                    <p class="desk__text text">
+                        Разрабатываем и адаптируем стратегии интернет-маркетинга под индивидуальные потребности каждого клиента, чтобы гарантировать наилучший результат и максимальный возврат от вложенных средств. Выбирая HIPERS, вы получаете партнёра, который будет работать на достижение ваших целей и обеспечивать рост вашего бизнеса!
+                    </p>
+                    <button class="desk__button btn" toggle="#callback">Оставить заявку</button>
+                </div>
+                <div class="desk__grid">
+                    <div class="desk__card">
+                        <p class="desk__card-name h3">Контекстная реклама</p>
+                        <p class="desk__card-text text">
+                            Точное попадание в целевую аудиторию. Пользователи, которые интересуются товарами или услугами вашего бизнеса, увидят вашу рекламу в поисковой выдаче, социальных сетях, мобильных приложениях и на сайтах-партнерах рекламных систем.
                         </p>
-                        <div class="strategy__quote">
-                            <div class="quote">
-                                <svg width="38" height="32" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.7 0L21 3.9L8.3 31.2L0 27.3L12.7 0ZM29.2 0L37.5 3.9L24.8 31.2L16.5 27.3L29.2 0Z" fill="#6877DD" />
-                                </svg>
-                                <p class="quote__text text text_dop">
-                                    Работаем на результат, чтобы Ваш бизнес мог расти быстрее и успешнее, чем Вы ожидали!
-                                </p>
+                        <button class="desk__card-button btn btn_white" toggle="#callback">Заказать услугу</button>
+                    </div>
+                    <div class="desk__card">
+                        <p class="desk__card-name h3">Таргетированная реклама</p>
+                        <p class="desk__card-text text">
+                            Позволяет учесть интересы, поведение и демографические характеристики потенциальных клиентов. Благодаря этому рекламу увидят только те пользователи, которые с большей вероятностью проявит интерес к продуктам или услугам вашего бизнеса.
+                        </p>
+                        <button class="desk__card-button btn btn_white" toggle="#callback">Заказать услугу</button>
+                    </div>
+                    <div class="desk__card">
+                        <p class="desk__card-name h3">Медийная реклама</p>
+                        <p class="desk__card-text text">
+                            Имиджевая интернет-реклама для привлечения внимания, повышения узнаваемости и формирования доверия к бренду. С возможностью проведения исследований, которые отражают рост осведомленности и интереса к объекту рекламирования.
+                        </p>
+                        <button class="desk__card-button btn btn_white" toggle="#callback">Заказать услугу</button>
+                    </div>
+                    <div class="desk__card">
+                        <p class="desk__card-name h3">Ретаргетинг</p>
+                        <p class="desk__card-text text">
+                            Показ рекламных объявлений пользователям, которые уже посещали ваш сайт или взаимодействовали с рекламными материалами, чтобы поддерживать с ними связь на разных этапах воронки продаж и повышать вероятность конверсий.
+                        </p>
+                        <button class="desk__card-button btn btn_white" toggle="#callback">Заказать услугу</button>
+                    </div>
+                    <div class="desk__card">
+                        <p class="desk__card-name h3">Influence-маркетинг</p>
+                        <p class="desk__card-text text">
+                            Нативные рекламные интеграции с лидерами мнений способствуют широкому охвату целевой аудитории вашего бизнеса, увеличивают продажи и создают положительное впечатление о продукте и бренде, основанное на доверии и репутации, которыми обладает блогер.
+                        </p>
+                        <button class="desk__card-button btn btn_white" toggle="#callback">Заказать услугу</button>
+                    </div>
+                    <div class="desk__card">
+                        <p class="desk__card-name h3">Продвижение на маркетплейсах</p>
+                        <p class="desk__card-text text">
+                            Поможем определиться с моделью работы, настроим рекламный кабинет, автоматизированную выгрузку, обновление цен и наличие товаров, пройдем модерацию и проведем обучение ваших сотрудников по работе с площадками.
+                        </p>
+                        <button class="desk__card-button btn btn_white" toggle="#callback">Заказать услугу</button>
+                    </div>
+                </div>
+                <div class="accordion desk__accordion">
+                    <div class="accordion__item desk__accordion-item">
+                        <div class="accordion__header desk__accordion-header">
+                            <span class="h3">Контекстная реклама</span>
+                            <span class="icon">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 0V15.5M15 15.5V31M15 15.5H0M15 15.5H30" stroke="#6877DD" stroke-width="3" />
+                                </svg> 
+                            </span>
+                        </div>
+                        <div class="accordion__body desk__accordion-body">
+                            <div class="accordion__content desk__accordion-content">
+                                <div class="desk__slug">
+                                    <p class="desk__card-text text">
+                                        Точное попадание в целевую аудиторию. Пользователи, которые интересуются товарами или услугами вашего бизнеса, увидят вашу рекламу в поисковой выдаче, социальных сетях, мобильных приложениях и на сайтах-партнерах рекламных систем.
+                                    </p>
+                                    <button class="desk__card-button btn btn_white" toggle="#callback">Заказать услугу</button>
+                                </div>
                             </div>
-                            <button class="strategy__quote-button btn" toggle="#callback">Оставить заявку</button>
                         </div>
                     </div>
-                    <div class="strategy__bottom">
-                        <a href="#" class="strategy__card">
-                            <span class="strategy__card-name h3">Реклама</span>
-                            <span class="strategy__card-text text">Контекстная, таргетированная, медийная, на маркетплейсах</span>
-                            <span class="strategy__card-link">
-                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.68629 12.9998H24.3137M24.3137 12.9998L13 1.68606M24.3137 12.9998L13 24.3135" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                    <div class="accordion__item desk__accordion-item">
+                        <div class="accordion__header desk__accordion-header">
+                            <span class="h3">Таргетированная реклама</span>
+                            <span class="icon">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 0V15.5M15 15.5V31M15 15.5H0M15 15.5H30" stroke="#6877DD" stroke-width="3" />
+                                </svg> 
                             </span>
-                        </a>
-                        <a href="#" class="strategy__card">
-                            <span class="strategy__card-name h3">Сайты</span>
-                            <span class="strategy__card-text text">Корпоративные сайты, лендинги, интернет-магазины</span>
-                            <span class="strategy__card-link">
-                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.68629 12.9998H24.3137M24.3137 12.9998L13 1.68606M24.3137 12.9998L13 24.3135" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                        </div>
+                        <div class="accordion__body desk__accordion-body">
+                            <div class="accordion__content desk__accordion-content">
+                                <div class="desk__slug">
+                                    <p class="desk__card-text text">
+                                        Позволяет учесть интересы, поведение и демографические характеристики потенциальных клиентов. Благодаря этому рекламу увидят только те пользователи, которые с большей вероятностью проявит интерес к продуктам или услугам вашего бизнеса.
+                                    </p>
+                                    <button class="desk__card-button btn btn_white" toggle="#callback">Заказать услугу</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item desk__accordion-item">
+                        <div class="accordion__header desk__accordion-header">
+                            <span class="h3">Медийная реклама</span>
+                            <span class="icon">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 0V15.5M15 15.5V31M15 15.5H0M15 15.5H30" stroke="#6877DD" stroke-width="3" />
+                                </svg> 
                             </span>
-                        </a>
-                        <a href="#" class="strategy__card">
-                            <span class="strategy__card-name h3">Дизайн</span>
-                            <span class="strategy__card-text text">Веб и графический дизайн, презентации, визитки, логотипы</span>
-                            <span class="strategy__card-link">
-                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.68629 12.9998H24.3137M24.3137 12.9998L13 1.68606M24.3137 12.9998L13 24.3135" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                        </div>
+                        <div class="accordion__body desk__accordion-body">
+                            <div class="accordion__content desk__accordion-content">
+                                <div class="desk__slug">
+                                    <p class="desk__card-text text">
+                                        Имиджевая интернет-реклама для привлечения внимания, повышения узнаваемости и формирования доверия к бренду. С возможностью проведения исследований, которые отражают рост осведомленности и интереса к объекту рекламирования.
+                                    </p>
+                                    <button class="desk__card-button btn btn_white" toggle="#callback">Заказать услугу</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item desk__accordion-item">
+                        <div class="accordion__header desk__accordion-header">
+                            <span class="h3">Ретаргетинг</span>
+                            <span class="icon">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 0V15.5M15 15.5V31M15 15.5H0M15 15.5H30" stroke="#6877DD" stroke-width="3" />
+                                </svg> 
                             </span>
-                        </a>
-                        <a href="#" class="strategy__card">
-                            <span class="strategy__card-name h3">Системы управления</span>
-                            <span class="strategy__card-text text">Внедрение CRM и ERP-систем</span>
-                            <span class="strategy__card-link">
-                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.68629 12.9998H24.3137M24.3137 12.9998L13 1.68606M24.3137 12.9998L13 24.3135" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                        </div>
+                        <div class="accordion__body desk__accordion-body">
+                            <div class="accordion__content desk__accordion-content">
+                                <div class="desk__slug">
+                                    <p class="desk__card-text text">
+                                        Показ рекламных объявлений пользователям, которые уже посещали ваш сайт или взаимодействовали с рекламными материалами, чтобы поддерживать с ними связь на разных этапах воронки продаж и повышать вероятность конверсий.
+                                    </p>
+                                    <button class="desk__card-button btn btn_white" toggle="#callback">Заказать услугу</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item desk__accordion-item">
+                        <div class="accordion__header desk__accordion-header">
+                            <span class="h3">Influence-маркетинг</span>
+                            <span class="icon">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 0V15.5M15 15.5V31M15 15.5H0M15 15.5H30" stroke="#6877DD" stroke-width="3" />
+                                </svg> 
                             </span>
-                        </a>
+                        </div>
+                        <div class="accordion__body desk__accordion-body">
+                            <div class="accordion__content desk__accordion-content">
+                                <div class="desk__slug">
+                                    <p class="desk__card-text text">
+                                        Нативные рекламные интеграции с лидерами мнений способствуют широкому охвату целевой аудитории вашего бизнеса, увеличивают продажи и создают положительное впечатление о продукте и бренде, основанное на доверии и репутации, которыми обладает блогер.
+                                    </p>
+                                    <button class="desk__card-button btn btn_white" toggle="#callback">Заказать услугу</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item desk__accordion-item">
+                        <div class="accordion__header desk__accordion-header">
+                            <span class="h3">Продвижение на маркетплейсах</span>
+                            <span class="icon">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 0V15.5M15 15.5V31M15 15.5H0M15 15.5H30" stroke="#6877DD" stroke-width="3" />
+                                </svg> 
+                            </span>
+                        </div>
+                        <div class="accordion__body desk__accordion-body">
+                            <div class="accordion__content desk__accordion-content">
+                                <div class="desk__slug">
+                                    <p class="desk__card-text text">
+                                        Поможем определиться с моделью работы, настроим рекламный кабинет, автоматизированную выгрузку, обновление цен и наличие товаров, пройдем модерацию и проведем обучение ваших сотрудников по работе с площадками.
+                                    </p>
+                                    <button class="desk__card-button btn btn_white" toggle="#callback">Заказать услугу</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="section projects">
             <div class="container">
                 <p class="subtitle">Портфолио</p>

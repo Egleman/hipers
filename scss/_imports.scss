@@ -2,11 +2,22 @@
 @import './variabled';
 
 @import './components/container';
+@import './components/input';
+@import './components/corner';
+@import './components/breadcrumb';
+@import './components/section';
 @import './components/text';
 @import './components/accordion';
 @import './components/buttons';
 @import './components/modals';
 
 @import './components/header';
+@import './components/footer';
 
 @import './sections/hero';
+@import './sections/strategy';
+@import './sections/projects';
+@import './sections/advantages';
+@import './sections/trust';
+@import './sections/callback';
+@import './sections/desk';
