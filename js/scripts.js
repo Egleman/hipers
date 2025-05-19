@@ -79,7 +79,36 @@ const portfolioSwiper = new Swiper(".portfolio-swiper", {
             slidesPerView: 'auto',
         }
     }
-});
+})
+
+const workSwiper = new Swiper(".work-swiper", {
+    spaceBetween: 10,
+    slidesPerView: 1,
+    loop: true,
+    autoHeight: true,
+    effect: "creative",
+    creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: ["-20%", 0, -1],
+        },
+        next: {
+          translate: ["100%", 0, 0],
+        },
+    },
+    navigation: {
+        nextEl: '.work__right',
+        prevEl: '.work__left',
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return `<p class="${className}"><span class="bullet-number">${index + 1}</span></p>`
+        //   return '<p class="' + className + '">' + (index + 1) + "</p>";
+        },
+    },
+})
 
 // Маска для номера телефона
 const im = new Inputmask({

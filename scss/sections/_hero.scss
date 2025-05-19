@@ -90,6 +90,14 @@
             box-sizing: border-box;
         }
     }
+    &_vacancies {
+        .hero__banner {
+            min-height: 400px;
+            background: url(/images/hero-section/7.jpg) center/cover no-repeat;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+    }
 }
 
 @media (max-width: 1022px) {
@@ -169,6 +177,12 @@
         &_systems {
             .hero__banner {
                 background: url(/images/hero-section/5-mobile.jpg) center/cover no-repeat;
+                justify-content: flex-start;
+            }
+        }
+        &_vacancies {
+            .hero__banner {
+                background: url(/images/hero-section/7-mobile.jpg) center/cover no-repeat;
                 justify-content: flex-start;
             }
         }
