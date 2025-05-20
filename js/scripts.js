@@ -170,34 +170,30 @@ forms.forEach((form, index) => {
             formData.forEach((value, key) => {
                 body_to_send[key] = value
             })
-
-            console.log(body_to_send)
-            this.classList.add('hidden')
-            classRemover(thanksBlocks[index], 'hidden')
-            // await fetch('/send-main.php', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify(body_to_send)
-            // })
-            // .then(response => {
-            //     if (!response.ok) {
-            //         throw new Error('Network response was not ok');
-            //     }
-            //     return response.json();
-            // })
-            // .then(data => {
-            //     if (data.result === 'success') {
-            //         this.reset()
-            //         document.querySelectorAll('.overlay').forEach(modal => classRemover(modal, 'active'))
-            //         document.querySelector('#thanks').classList.add('active')
-            //     }
+        
+            await fetch('/send.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(body_to_send)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.result === 'success') {
+                    this.classList.add('hidden')
+                    classRemover(thanksBlocks[index], 'hidden')
+                }
                 
-            // })
-            // .catch(error => {
-            //     console.error('Error:', error);
-            // });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
         }
     })
 })
