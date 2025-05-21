@@ -45,15 +45,15 @@ if (!error_get_last()) {
     
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'site@20ft.su'; // Логин на почте
-    $mail->Password   = '6jMaUs0vNz5CRpZ34wPd'; // Пароль на почте
+    $mail->Username   = 'noname@hipers.ru'; // Логин на почте
+    $mail->Password   = 'f1gFT1HPPx4c0A3iRX7z'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('site@20ft.su', 'site@20ft.su'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('noname@hipers.ru', 'noname@hipers.ru'); // Адрес самой почты и имя отправителя
     
     // Получатель письма 
-    $mail->addAddress('sales@20ft.su'); // Email получателя
-    //$mail->addAddress('mail@mail.ru'); // Ещё один, если нужен
+    $mail->addAddress('e.lylova@hipers.ru'); // Email получателя
+    $mail->addAddress('it@hipers.ru'); // Ещё один, если нужен
     
 
     // Отправка сообщения
