@@ -833,7 +833,7 @@ h2, .h2 {
   background: var(--white);
 }
 .hero__banner {
-  background: url(/images/hero-section/1.jpg) center/cover no-repeat;
+  background: url(/images/hero-section/1.webp) center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -890,7 +890,7 @@ h2, .h2 {
 }
 .hero_reclame .hero__banner {
   min-height: 400px;
-  background: url(/images/hero-section/2.jpg) center/cover no-repeat;
+  background: url(/images/hero-section/2.webp) center/cover no-repeat;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -899,7 +899,7 @@ h2, .h2 {
 }
 .hero_sites .hero__banner {
   min-height: 400px;
-  background: url(/images/hero-section/3.jpg) center/cover no-repeat;
+  background: url(/images/hero-section/3.webp) center/cover no-repeat;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -908,7 +908,7 @@ h2, .h2 {
 }
 .hero_design .hero__banner {
   min-height: 400px;
-  background: url(/images/hero-section/4.jpg) center/cover no-repeat;
+  background: url(/images/hero-section/4.webp) center/cover no-repeat;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -917,7 +917,7 @@ h2, .h2 {
 }
 .hero_systems .hero__banner {
   min-height: 400px;
-  background: url(/images/hero-section/5.jpg) center/cover no-repeat;
+  background: url(/images/hero-section/5.webp) center/cover no-repeat;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -926,7 +926,7 @@ h2, .h2 {
 }
 .hero_vacancies .hero__banner {
   min-height: 400px;
-  background: url(/images/hero-section/7.jpg) center/cover no-repeat;
+  background: url(/images/hero-section/7.webp) center/cover no-repeat;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -935,7 +935,7 @@ h2, .h2 {
 }
 .hero_portfolio .hero__banner {
   min-height: 400px;
-  background: url(/images/hero-section/8.jpg) center/cover no-repeat;
+  background: url(/images/hero-section/8.webp) center/cover no-repeat;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -972,7 +972,7 @@ h2, .h2 {
     border-radius: 20px;
   }
   .hero__banner {
-    background: url(/images/hero-section/1-mobile.jpg) center/cover no-repeat;
+    background: url(/images/hero-section/1-mobile.webp) center/cover no-repeat;
     padding: 15px 15px 278px 15px;
     border-radius: 15px;
   }
@@ -985,37 +985,37 @@ h2, .h2 {
     gap: 5px;
   }
   .hero_reclame .hero__banner {
-    background: url(/images/hero-section/2-mobile.jpg) center/cover no-repeat;
+    background: url(/images/hero-section/2-mobile.webp) center/cover no-repeat;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
   .hero_sites .hero__banner {
-    background: url(/images/hero-section/3-mobile.jpg) center/cover no-repeat;
+    background: url(/images/hero-section/3-mobile.webp) center/cover no-repeat;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
   .hero_design .hero__banner {
-    background: url(/images/hero-section/4-mobile.jpg) center/cover no-repeat;
+    background: url(/images/hero-section/4-mobile.webp) center/cover no-repeat;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
   .hero_systems .hero__banner {
-    background: url(/images/hero-section/5-mobile.jpg) center/cover no-repeat;
+    background: url(/images/hero-section/6-mobile.webp) center/cover no-repeat;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
   .hero_vacancies .hero__banner {
-    background: url(/images/hero-section/7-mobile.jpg) center/cover no-repeat;
+    background: url(/images/hero-section/7-mobile.webp) center/cover no-repeat;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
   .hero_portfolio .hero__banner {
-    background: url(/images/hero-section/8-mobile.jpg) center/cover no-repeat;
+    background: url(/images/hero-section/8-mobile.webp) center/cover no-repeat;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1613,7 +1613,7 @@ h2, .h2 {
 .desk__banner {
   border-radius: 30px;
   padding: 40px;
-  background: url(/images/desk-section/1.jpg) center/cover no-repeat;
+  background: url(/images/desk-section/1.webp) center/cover no-repeat;
   margin-bottom: 10px;
 }
 .desk__title {
@@ -1802,7 +1802,7 @@ h2, .h2 {
 .work__wrapper {
   border-radius: 30px;
   padding: 40px;
-  background: url(/images/work-section/1.jpg) center/cover no-repeat;
+  background: url(/images/work-section/1.webp) center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2171,7 +2171,7 @@ h2, .h2 {
   background: var(--white);
 }
 .error__banner {
-  background: url(/images/hero-section/9.jpg) center/cover no-repeat;
+  background: url(/images/hero-section/9.webp) center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

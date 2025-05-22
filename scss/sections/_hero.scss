@@ -8,7 +8,7 @@
         background: var(--white);
     }
     &__banner {
-        background: url(/images/hero-section/1.jpg) center/cover no-repeat;
+        background: url(/images/hero-section/1.webp) center/cover no-repeat;
         display: flex;
         flex-direction: column;
         border-radius: 25px;
@@ -61,7 +61,7 @@
     &_reclame {
         .hero__banner {
             min-height: 400px;
-            background: url(/images/hero-section/2.jpg) center/cover no-repeat;
+            background: url(/images/hero-section/2.webp) center/cover no-repeat;
             justify-content: center;
             box-sizing: border-box;
         }
@@ -69,7 +69,7 @@
     &_sites {
         .hero__banner {
             min-height: 400px;
-            background: url(/images/hero-section/3.jpg) center/cover no-repeat;
+            background: url(/images/hero-section/3.webp) center/cover no-repeat;
             justify-content: center;
             box-sizing: border-box;
         }
@@ -77,7 +77,7 @@
     &_design {
         .hero__banner {
             min-height: 400px;
-            background: url(/images/hero-section/4.jpg) center/cover no-repeat;
+            background: url(/images/hero-section/4.webp) center/cover no-repeat;
             justify-content: center;
             box-sizing: border-box;
         }
@@ -85,7 +85,7 @@
     &_systems {
         .hero__banner {
             min-height: 400px;
-            background: url(/images/hero-section/5.jpg) center/cover no-repeat;
+            background: url(/images/hero-section/5.webp) center/cover no-repeat;
             justify-content: center;
             box-sizing: border-box;
         }
@@ -93,7 +93,7 @@
     &_vacancies {
         .hero__banner {
             min-height: 400px;
-            background: url(/images/hero-section/7.jpg) center/cover no-repeat;
+            background: url(/images/hero-section/7.webp) center/cover no-repeat;
             justify-content: center;
             box-sizing: border-box;
         }
@@ -101,7 +101,7 @@
     &_portfolio {
         .hero__banner {
             min-height: 400px;
-            background: url(/images/hero-section/8.jpg) center/cover no-repeat;
+            background: url(/images/hero-section/8.webp) center/cover no-repeat;
             justify-content: center;
             box-sizing: border-box;
         }
@@ -151,7 +151,7 @@
             border-radius: 20px;
         }
         &__banner {
-            background: url(/images/hero-section/1-mobile.jpg) center/cover no-repeat;
+            background: url(/images/hero-section/1-mobile.webp) center/cover no-repeat;
             padding: 15px 15px 278px 15px;
             border-radius: 15px;
         }
@@ -166,37 +166,37 @@
 
         &_reclame {
             .hero__banner {
-                background: url(/images/hero-section/2-mobile.jpg) center/cover no-repeat;
+                background: url(/images/hero-section/2-mobile.webp) center/cover no-repeat;
                 justify-content: flex-start;
             }
         }
         &_sites {
             .hero__banner {
-                background: url(/images/hero-section/3-mobile.jpg) center/cover no-repeat;
+                background: url(/images/hero-section/3-mobile.webp) center/cover no-repeat;
                 justify-content: flex-start;
             }
         }
         &_design {
             .hero__banner {
-                background: url(/images/hero-section/4-mobile.jpg) center/cover no-repeat;
+                background: url(/images/hero-section/4-mobile.webp) center/cover no-repeat;
                 justify-content: flex-start;
             }
         }
         &_systems {
             .hero__banner {
-                background: url(/images/hero-section/5-mobile.jpg) center/cover no-repeat;
+                background: url(/images/hero-section/6-mobile.webp) center/cover no-repeat;
                 justify-content: flex-start;
             }
         }
         &_vacancies {
             .hero__banner {
-                background: url(/images/hero-section/7-mobile.jpg) center/cover no-repeat;
+                background: url(/images/hero-section/7-mobile.webp) center/cover no-repeat;
                 justify-content: flex-start;
             }
         }
         &_portfolio {
             .hero__banner {
-                background: url(/images/hero-section/8-mobile.jpg) center/cover no-repeat;
+                background: url(/images/hero-section/8-mobile.webp) center/cover no-repeat;
                 justify-content: flex-start;
             }
         }
