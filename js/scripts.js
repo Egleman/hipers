@@ -347,3 +347,37 @@ window.addEventListener('click', async (e) => {
         }
     }
 })
+
+function handleStickyHeader() {
+    const header = document.querySelector('header');
+    if (!header) return; // Проверяем наличие элемента
+
+    const checkScroll = () => {
+        if (window.scrollY >= 5) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+    };
+
+    // Добавляем обработчик события скролла
+    window.addEventListener('scroll', checkScroll);
+    // Вызываем функцию сразу для обработки начальной позиции
+    checkScroll();
+}
+
+handleStickyHeader()
+
+document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search)
+    const anchor = params.get('anchor')
+
+    if (!anchor) return 
+
+    const target = document.querySelector(`#${anchor}`);
+    if (!target) return;
+
+    const offset = 50;
+    const position = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: position, behavior: 'smooth' });
+});
