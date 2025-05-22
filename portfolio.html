@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.svg" type="image/svg">
     <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/splide.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Hipers</title>
+    <title>Портфолио | Hipers.ru</title>
 </head>
 <body>
     <header class="header">
@@ -481,6 +482,7 @@
                         </p>
                     </div>
                     <form action="#" class="callback__form">
+                        <input type="hidden" name="page_name" value="Портфолио">
                         <div class="input-wrap">
                             <input type="text" placeholder="Ваше имя*" name="name" data-state="required">
                             <p>*Обязательное поле</p>
@@ -630,7 +632,7 @@
     </div>
 
     <div class="overlay" id="callback">
-        <div class="modal-callback">
+        <div class="modal-callback modal">
             <div class="modal-callback__header">
                 <p class="modal-callback__title h2">Оставить заявку</p>
                 <button class="modal-callback__close" toggle="#callback">
@@ -640,6 +642,7 @@
                 </button>
             </div>
             <form action="#" class="modal-callback__form">
+                <input type="hidden" name="page_name" value="Портфолио">
                 <div class="input-wrap">
                     <input type="text" placeholder="Ваше имя*" name="name" data-state="required">
                     <p>*Обязательное поле</p>
@@ -674,7 +677,7 @@
     </div>
 
     <div class="overlay" id="policy">
-        <div class="modal-policy">
+        <div class="modal-policy modal">
             <div class="modal-callback__header">
                 <p class="modal-policy__title h2">Политика конфиденциальности</p>
                 <button class="modal-callback__close" toggle="#policy">
@@ -825,6 +828,8 @@
     </div>
     <script src="/js/inputmask.min.js"></script>
     <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="/js/splide.min.js"></script>
     <script src="/js/scripts.js"></script>
 </body>
 </html>

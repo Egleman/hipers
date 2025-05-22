@@ -32,6 +32,9 @@
             object-fit: contain;
         }
     }
+    .splide {
+        pointer-events: none;
+    }
 }
 
 @keyframes scroll {

@@ -110,6 +110,25 @@ const workSwiper = new Swiper(".work-swiper", {
     },
 })
 
+if (document.querySelector('.splide')) {
+    const splide = new Splide( '.splide', {
+        type   : 'loop',
+        autoWidth: true,
+        gap: '10px',
+        pagination: false,
+        arrows: false,
+        direction: 'rtl',
+        autoScroll: {
+          speed: 1,
+          pauseOnHover: false,
+          pauseOnFocus: false,
+        },
+    });
+      
+    splide.mount(window.splide.Extensions)
+}
+
+
 // Маска для номера телефона
 const im = new Inputmask({
     mask: '(+7|8) (999) 999-99-99',
@@ -144,6 +163,13 @@ forms.forEach((form, index) => {
                 if (input.value === '' || input.value === ' ') {
                     input.parentNode.classList.add('error')
                     permission_to_send = false
+                }
+
+                if (input.getAttribute('name') === 'phone') {
+                    if (input.value.replace(/\D+/g, '').length !== 11) {
+                        input.parentNode.classList.add('error')
+                        permission_to_send = false
+                    }
                 }
 
                 input.addEventListener('focus', () => {
@@ -302,10 +328,22 @@ class Accordion {
     toggle(el) {
         el.classList.contains('accordion__item_show') ? this.hide(el) : this.show(el);
     }
-  }
-  const accordions = document.querySelectorAll('.accordion');
+}
+const accordions = document.querySelectorAll('.accordion');
   accordions.forEach(accordion => {
     new Accordion(accordion, {
         alwaysOpen: false
     });
-  })
+})
+
+window.addEventListener('click', async (e) => {
+    const modals = document.querySelectorAll('.overlay');
+    for (const modal of modals) {
+        if (e.target === modal) {
+            classRemover(modal, 'visible')
+            await sleep(500)
+            classRemover(modal, 'active')
+            unblockVerticalScroll()
+        }
+    }
+})

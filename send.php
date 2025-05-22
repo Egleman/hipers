@@ -15,8 +15,10 @@ if (!error_get_last()) {
     $phone = $jsonData['phone'];
     $email = $jsonData['email'];
     $comment = $jsonData['comment'];
+    $page_name = $jsonData['page_name'];
 
     $translatedData = [
+        'Название страницы' => $page_name,
         'Имя' => $name,
         'Телефон' => $phone,
         'Почта' => $email,
