@@ -149,6 +149,7 @@ forms.forEach((form, index) => {
         const body_to_send = {}
 
         const requiredInputs = this.querySelectorAll('input[data-state="required"]')
+        const checkerInput = this.querySelector('input[name="checker"]')
 
         let permission_to_send = true
 
@@ -183,13 +184,10 @@ forms.forEach((form, index) => {
                     }
                 })
             })
+        }
 
-            permission_to_send = Array.from(requiredInputs).every(input => {
-                if (input.type === 'checkbox') {
-                    return input.checked;
-                }
-                return input.value.trim().length > 0
-            })
+        if (checkerInput.value !== '') {
+            permission_to_send = false
         }
 
         if (permission_to_send) {

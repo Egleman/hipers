@@ -64,7 +64,7 @@ if (!error_get_last()) {
     $mail->Body = $body;    
     
     // Проверяем отправленность сообщения
-    if (preg_match_all('/[\S]+/', $phone)) {
+    if (preg_match_all('/\d/', $phone, $matches) && count($matches[0]) == 11) {
         if ($mail->send()) {
             $data['result'] = "success";
             $data['info'] = "Сообщение успешно отправлено!";
@@ -74,7 +74,8 @@ if (!error_get_last()) {
             $data['desc'] = "Причина ошибки: {$mail->ErrorInfo}";
         }
     } else {
-        $data['result'] = 0;
+        $data['result'] = "error";
+        $data['info'] = "Номер телефона должен содержать 11 цифр";
     }
     
 } else {
